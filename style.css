@@ -1,0 +1,125 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Background & Font */
+body {
+  font-family: 'Creepster', cursive;
+  background: url('https://images.pexels.com/photos/14701834/pexels-photo-14701834.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0dada;
+}
+
+/* Overlay */
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  min-height: 100vh;
+}
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 100% { opacity: 1; }
+  20%, 22%, 24% { opacity: 0.4; }
+}
+
+header h1 {
+  animation: flicker 3s infinite;
+  color: #ff1111;
+  text-shadow: 0 0 10px #ff1111, 0 0 20px #ff5555;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 4rem;
+  color: #8b0000;
+  text-shadow: 4px 4px 15px black;
+}
+header p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Navigation styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 25px;               /* Add horizontal space between nav items */
+}
+
+nav ul li a {
+  color: #bf0000;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 5px 10px;           /* Add padding around links */
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-block;       /* Allow padding and transforms */
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+  text-shadow: 2px 2px 8px red;
+  transform: scale(1.05);      /* Slight zoom effect on hover */
+}
+
+
+/* Featured */
+.featured h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #dd66ff;
+  text-shadow: 2px 2px 8px black;
+  margin-bottom: 20px;
+}
+.story-card {
+  background-color: rgba(30, 0, 0, 0.9);
+  padding: 20px;
+  border: 2px solid #a00000;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 25px #550000;
+  text-align: center;
+}
+.story-card h3 {
+  font-size: 2rem;
+  color: #ffeeee;
+  text-shadow: 1px 1px 4px #000;
+  margin-bottom: 10px;
+}
+.story-card p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.story-card a {
+  background-color: #cc0000;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.story-card a:hover {
+  background-color: #880000;
+  box-shadow: 0 0 15px #550000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
